@@ -13,8 +13,8 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram import Update, Bot
 from telegram.ext import run_async
 
-from miakhalifa.modules.disable import DisableAbleCommandHandler
-from miakhalifa import dispatcher, StartTime
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot import dispatcher, StartTime
 
 from requests import get
 
