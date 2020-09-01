@@ -10,9 +10,9 @@ from typing import List
 from telegram import ParseMode, InputMediaPhoto, Update, Bot, TelegramError
 from telegram.ext import run_async
 
-from miakhalifa import dispatcher
+from tg_bot import dispatcher
 
-from miakhalifa.modules.disable import DisableAbleCommandHandler
+from tg_bot.modules.disable import DisableAbleCommandHandler
 
 
 opener = urllib.request.build_opener()
@@ -181,11 +181,11 @@ def scam(imgspage, lim):
 
 
 __help__ = """
-- /reverse: Does a reverse image search of the media which it was replied to.
+- /lens: Does a reverse image search of the media which it was replied to.
 """
 
 __mod_name__ = "REVERSE IMAGE SEARCH"
 
-REVERSE_HANDLER = DisableAbleCommandHandler("reverse", reverse, pass_args=True, admin_ok=True)
+REVERSE_HANDLER = DisableAbleCommandHandler("lens", reverse, pass_args=True, admin_ok=True)
 
 dispatcher.add_handler(REVERSE_HANDLER)
